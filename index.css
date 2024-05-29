@@ -100,7 +100,7 @@ body {
     color: gray;
     font-style: italic;
   }
-  body>main{
+  main{
     max-width: 800px;
     margin: auto;
   }
