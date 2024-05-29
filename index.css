@@ -107,3 +107,21 @@ main {
   color: gray;
   font-style: italic;
 }
+
+
+li {
+  list-style: none;
+}
+li::before {
+  content: "\00BB";
+   padding-right: 10px;
+}
+
+.greet {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.basic-intro {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
