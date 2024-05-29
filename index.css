@@ -4,7 +4,7 @@
 
 body {
   margin: 0px;
-  font-family: 'segoe ui';
+  font-family: "segoe ui";
   background-color: rgb(236, 232, 232);
 }
 
@@ -51,7 +51,7 @@ body {
   display: none;
 }
 
-@media (max-width:600px) {
+@media (max-width: 600px) {
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -64,7 +64,8 @@ body {
     height: 50px;
     padding: 13px;
   }
-  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+  .nav > .nav-btn > label:hover,
+  .nav #nav-check:checked ~ .nav-btn > label {
     background-color: rgba(0, 0, 0, 0.3);
   }
   .nav > .nav-btn > label > span {
@@ -95,13 +96,14 @@ body {
     height: calc(100vh - 50px);
     overflow-y: auto;
   }
-  .category-of-blog{
-    font-size: 0.8em;
-    color: gray;
-    font-style: italic;
-  }
-  main{
-    max-width: 800px;
-    margin: auto;
-  }
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+}
+.category-of-blog {
+  font-size: 0.8em;
+  color: gray;
+  font-style: italic;
 }
