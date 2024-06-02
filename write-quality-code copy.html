@@ -1,48 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./index.css" />
-    <title>Write Quality Code</title>
-  </head>
-  <body>
-    <header>
-      <div class="nav">
-        <input type="checkbox" id="nav-check" />
-        <div class="nav-header"></div>
-        <div class="nav-btn">
-          <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-        </div>
 
-        <div class="nav-links">
-          <a href="./write-quality-code.html">Write Quality code</a>
-          <a href="./crossing-rough-patches.html">Crossing rough patches</a>
-          <a href="./contributed-articles.">Contributed Articles</a>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./index.css" />
+  <title>Write Quality Code</title>
+</head>
+
+<body>
+  <header>
+    <div class="nav">
+      <input type="checkbox" id="nav-check" />
+      <div class="nav-header"></div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
       </div>
-    </header>
 
-    <main>
-      <p class="category-of-blog">Write Quality Code #1</p>
-      <h2>Oh!! that's why they do it</h2>
-      <p>Often times, when we are looking at the code of experienced developers, you notice different ways of doing something that it appears to us, why the extra effort. Then as you code you start seeing why what they did make perfect sense. Though I have no idea of many others, below are three of them I recently pick up on as a habit because I saw the importance and the baggage it lifts for us:</p>
-     <section>
-       <h4>
+      <div class="nav-links">
+        <a href="./write-quality-code.html">Write Quality code</a>
+        <a href="./crossing-rough-patches.html">Crossing rough patches</a>
+        <a href="./contributed-articles.">Contributed Articles</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <p class="category-of-blog">Write Quality Code #1</p>
+    <h2>Oh!! that's why they do it</h2>
+    <p>Often times, when we are looking at the code of experienced developers, you notice different ways of doing
+      something that it appears to us, why the extra effort. Then as you code you start seeing why what they did make
+      perfect sense. Though I have no idea of many others, below are three of them I recently pick up on as a habit
+      because I saw the importance and the baggage it lifts for us:</p>
+    <section>
+      <h4>
         Keeping the variables used in multiple files in one constants file
       </h4>
       <p>
-        So, I was retrieving the token sent from the backend and stored in the localstorage. Token being the way of authentication, it is used in many parts of the code to check the status of authentication. But at one point, I happen to change the name of the variable used for token in the backend, and now, i have to go to all the places in the code where i have used to previous name and replace, I could also have used find and replace of vs code but that would also get the unintented instance of those variables. So, now I am convinced to put the variables name used in many places in the code in one file and export from there, and use it where necessary by importing it that way, we wuold only need to change the variable name at one place if ever we need to change it. 
+        So, I was retrieving the token sent from the backend and stored in the localstorage. Token being the way of
+        authentication, it is used in many parts of the code to check the status of authentication. But at one point, I
+        happen to change the name of the variable used for token in the backend, and now, i have to go to all the places
+        in the code where i have used to previous name and replace, I could also have used find and replace of vs code
+        but that would also get the unintented instance of those variables. So, now I am convinced to put the variables
+        name used in many places in the code in one file and export from there, and use it where necessary by importing
+        it that way, we wuold only need to change the variable name at one place if ever we need to change it.
       </p>
-     </section>
-      <h4>Validating the environment variables</h4>
-      <h4>Checking for empty value and handling them</h4>
-      <h4>Using typescript</h4>
-    </main>
-    <footer></footer>
-  </body>
+    </section>
+    <h4>Validating the environment variables</h4>
+    <h4>Checking for empty value and handling them</h4>
+    <h4>Using typescript</h4>
+  </main>
+  <footer></footer>
+</body>
+
 </html>
